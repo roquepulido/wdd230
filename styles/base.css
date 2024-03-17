@@ -5,7 +5,7 @@
     --secondary: #4F6D7A;
     --info: #56A3A6;
     --font-color: azure;
-
+    --font-color-dark: black;
 }
 
 * {
@@ -17,6 +17,10 @@
 html {
     font-family: 'Montserrat', system-ui;
     min-width: 400px;
+}
+
+body {
+    min-height: 100vh;
 }
 
 header {
@@ -148,4 +152,45 @@ footer {
 
 .flag img {
     width: 20px;
+}
+
+/* Chambser site css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+section p {
+    text-align: center;
+    padding: .5rem;
+}
+
+section h1 {
+    text-align: center;
+    padding: .5rem;
+}
+
+section ol li {
+    padding: .5rem;
+}
+section img{
+    padding: .5rem;
 }
