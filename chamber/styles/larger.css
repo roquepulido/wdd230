@@ -1,0 +1,40 @@
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1.5rem;
+
+    }
+
+    .card {
+        box-shadow: 10px 6px 15px 6px rgba(0, 0, 0, 0.36);
+
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .row-footer {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+    }
+
+}
