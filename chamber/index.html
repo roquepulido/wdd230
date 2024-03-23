@@ -24,36 +24,90 @@
 
 <body>
     <header>
-        <h4>header</h4>
-
+        <div class="header-brand">
+            <img class="brand-logo" src="./images/logo-chamber.png" alt="logo Chamber">
+            <h1>Chamber of Commerce Mérida, Yucatán</h1>
+        </div>
     </header>
-    <nav>
-        <h1>Chamber of Commerce Merida, Yucatan</h1>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="./chamber-site-plan.html" class="active">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" title="Home" class="active">Home</a>
+        <a href="#" title="Discover">Discover</a>
+        <a href="#" title="Directory">Directory</a>
+        <a href="#" title="Join">Join</a>
     </nav>
+
     <main class="container">
-        <h2>MAIN</h2>
-        <section class="hero">
+        <section class="hero-container">
             <img src="./images/hero.jpg" alt="Paseo Montejo, Merida Yucatan">
             <button>Join to the chamber</button>
         </section>
-        <section class="events">
-            <h2>events</h2>
-        </section>
-        <section class="weather">
-            <h2>Weather</h2>
-        </section>
-        <section class="spotlights">
-            <h2>Spotlights</h2>
+        <div class="cards">
+
+            <section id="events" class=" card">
+                <h2>Events</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quisquam aspernatur ducimus eveniet,
+                    dicta minus vel dignissimos nesciunt, iste sapiente optio iusto veniam molestias cupiditate impedit
+                    eaque iure consequuntur earum?</p>
+            </section>
+            <section class="weather card">
+                <h2>Weather</h2>
+                <div>
+                    <p id="place"></p>
+                    <p id="temp"></p>
+                    <p>Page Visits: <span id="visits"></span></p>
+                </div>
+            </section>
+        </div>
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="container-spot">
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+            </div>
+
         </section>
     </main>
 
     <footer>
+        <div class="row-footer">
+            <img class="brand-logo" src="./images/logo-chamber.png" alt="logo Chamber">
+            <div class="info-footer">
+                <p>
+                    contact: <span> chamber@chabermerida.org</span>
+                </p>
+                <p>
+                    tel:<span>999-234-3423</span>
+                </p>
+                <p>address:35 street, centro, Merida, Yuctan, Mexico</p>
+            </div>
+        </div>
         <div class="row-footer">
             <p>&copy;<span id="year"></span></p>
             <p>
@@ -67,6 +121,15 @@
         </div>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script>
+        const hamButton = document.querySelector('#menu');
+        const navigation = document.querySelector('.navigation');
+
+        hamButton.addEventListener('click', () => {
+            navigation.classList.toggle('open');
+            hamButton.classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

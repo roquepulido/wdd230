@@ -14,6 +14,16 @@
     box-sizing: border-box;
 }
 
+/* Chambser site css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
 html {
     font-family: 'Montserrat', system-ui;
     min-width: 400px;
@@ -43,20 +53,36 @@ header span {
     color: var(--font-color);
 }
 
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 7rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--font-color);
+}
+
+#menu.open::before {
+    content: "❎";
+}
 nav {
+    display: flex;
+	flex-direction: column;
+	list-style: none;
     background-color: var(--secondary);
+    color: var(--font-color);
 }
-
-nav ul {
-    list-style-type: none;
-    font-weight: 600;
-
-
-}
-
 nav a {
-    transition: all .25s ease-in;
-    display: block;
+    display: none;
+    transition: background-color .25s ease-in;
     color: var(--font-color);
     text-align: center;
     padding: 0.6rem;
@@ -73,6 +99,12 @@ nav a.active {
     background-color: rgba(0, 0, 0, 0.2);
     text-shadow: 0px 0px 10px var(--font-color);
 }
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
 
 main {
     padding: 1rem;
@@ -139,34 +171,14 @@ footer {
     color: var(--warning);
 }
 
-.flag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-}
-
 .row-footer {
     text-align: center;
 }
 
-.flag img {
-    width: 20px;
-}
-
-/* Chambser site css */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto', Arial, sans-serif;
-}
 
 .container {
     margin: auto;
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +187,12 @@ h6 {
 }
 
 section {
-    padding: 1rem 0;
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 section p {
@@ -183,15 +200,55 @@ section p {
     padding: .5rem;
 }
 
-section h1 {
-    text-align: center;
-    padding: .5rem;
+
+.brand-logo {
+    width: 100px;
 }
 
-section ol li {
-    padding: .5rem;
+.header-brand {
+    display: flex;
+    gap: 3rem;
+    color: var(--font-color);
 }
 
-section img {
-    padding: .5rem;
+.hero-container {
+    width: 100%;
+    position: relative;
+}
+
+.hero-container img {
+    width: 100%;
+}
+
+.hero-container button {
+
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1rem;
+    background-color: #084C6186;
+    color: var(--font-color);
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color .3s ease;
+}
+
+.hero-container button:hover {
+    background-color: #084C61cb;
+}
+
+#spotlights {
+    border: 1px solid black;
+    border-radius: .25rem;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.container-spot {
+    display: flex;
+    flex-direction: column;
 }
