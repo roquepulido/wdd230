@@ -6,6 +6,7 @@
     --info: #56A3A6;
     --font-color: azure;
     --font-color-dark: black;
+    --base-back-ground: #eee;
 }
 
 * {
@@ -73,13 +74,15 @@ header span {
 #menu.open::before {
     content: "❎";
 }
+
 nav {
     display: flex;
-	flex-direction: column;
-	list-style: none;
+    flex-direction: column;
+    list-style: none;
     background-color: var(--secondary);
     color: var(--font-color);
 }
+
 nav a {
     display: none;
     transition: background-color .25s ease-in;
@@ -102,7 +105,7 @@ nav a.active {
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+    display: block;
 }
 
 
@@ -241,6 +244,30 @@ section p {
     background-color: #084C61cb;
 }
 
+.aside-bar {
+    width: 100%;
+}
+
+.aside-bar>.heading {
+    margin: 1rem 0;
+
+}
+
+.aside-bar>.heading>h3 {
+    margin: 1rem 0;
+}
+
+.img-container {
+    transition: all 1s ease 0s;
+    position: relative;
+}
+
+.img-container:hover {
+    transform: scale(.9);
+    box-shadow: 5px 5px 10px 10px #aaa;
+
+}
+
 #spotlights {
     border: 1px solid black;
     border-radius: .25rem;
@@ -251,4 +278,23 @@ section p {
 .container-spot {
     display: flex;
     flex-direction: column;
+}
+
+.calendar-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.img-container figcaption {
+    position: absolute;
+    bottom: 0;
+    color: var(--font-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-shadow: 2px 6px 8px rgba(255, 255, 255);
 }
