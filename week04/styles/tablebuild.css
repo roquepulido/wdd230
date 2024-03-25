@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.center {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+table {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+th,td{
+    padding: 1rem 0;
+}
+.change-bg,
+tbody>tr:nth-of-type(even) {
+    background-color: #444;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
