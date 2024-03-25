@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #ddd;
+    --border-radius: 6px;
+    --color: #333;
+}
+
+/*----------- FORM STYLE --------------*/
+.form-class fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: .5rem 2%;
+    width: 450px;
+}
+
+.form-class legend {
+    color: #111;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.form-class label {
+    display: block;
+    padding-top: 1rem;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.form-class input[type='text'],
+.form-class input[type='email'],
+.form-class input[type='password'] {
+    background-color: var(--bg-color);
+    display: block;
+    border: solid 1px #999;
+    border-radius: var(--border-radius);
+    padding: .75rem;
+    color: var(--color);
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.1rem;
+    
+}
+
+.form-class input[type='submit']:disabled {
+    background-image: linear-gradient(#faa, #fdd);
+}
+.form-class input[type='submit'] {
+    border: none;
+    background-image: linear-gradient(#00ff00, #008800);
+    color: var(--color);
+    border-radius:var(--border-radius);
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 2rem;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.form-class input:required {
+    border-right: solid 8px red;
+}
+
+.form-class input:required:valid {
+    border-right: solid 8px green;
+}
+
+.form-class input[type='range']{
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+   
+}
+#rateValue{
+    font-weight: 800;
+}
