@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload Demostation </title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Roque Alberto Pulido course assignment portal">
+    <meta name="author" content="Roque Pulido">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./styles/lazyload.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Lazyload Demostation</h1>
+    </header>
+    <main>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=1" alt="Img one" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=2" alt="Img two" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=3" alt="Img three" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=4" alt="Img four" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=5" alt="Img five" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img  src="https://picsum.photos/400/600?random=6" alt="Img six" loading="lazy" width="400"
+                height="600">
+        </picture>
+
+
+    </main>
+    <footer>
+
+        <div class="row-footer">
+
+            <p>&copy;<span id="year"></span></p>
+            <p>
+                &#128125; Roque Alberto Pulido &#128126;
+            </p>
+        </div>
+        <div class="row-footer">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+</body>
+
+</html>

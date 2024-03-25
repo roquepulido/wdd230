@@ -1,0 +1,68 @@
+:root {
+    --primary: #084C61;
+    --danger: #DB504A;
+    --warning: #E3B505;
+    --secondary: #4F6D7A;
+    --info: #56A3A6;
+    --font-color: azure;
+    --font-color-dark: black;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+footer {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--font-color);
+    background-color: var(--primary);
+}
+
+#lastModified {
+    color: var(--warning);
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.row-footer {
+    text-align: center;
+}
+
+.flag img {
+    width: 20px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

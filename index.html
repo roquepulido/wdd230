@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Roque Alberto Pulido" width="75" height="100">
+        <img src="images/profile.jpg" alt="Roque Alberto Pulido" width="75" height="100" loading="lazy">
         <span>Roque A. Pulido</span>
     </header>
     <nav>
@@ -29,18 +29,49 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="./images/merida-mobile.webp" media="(max-width:600px)">
+
+                <img src="./images/merida-large.webp " alt="temple" width="960" height="720" loading="lazy">
+            </picture>
+            <span class="hero-text">Templo Mérida Yucatán</span>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="cards">
             <section class="card">
                 <h2>Learning Activities</h2>
                 <ul>
-                    <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media
-                            Query</a> | <a href="https://codepen.io/roquepulido/pen/xxBoorQ">JS Pen</a></li>
-                    <li>Week 02:<a href=""></a></li>
-                    <li>Week 03:<a href=""></a></li>
-                    <li>Week 04:<a href=""></a></li>
-                    <li>Week 05:<a href=""></a></li>
-                    <li>Week 06:<a href=""></a></li>
+                    <li>
+                        <span>
+                            Week 01:
+                        </span>
+                        <a href="./week01/holygrail.html" target="_blank">Layout</a>
+                        <span>|</span>
+                        <a href="./week01/media-query.html" target="_blank">Media Query</a>
+                        <span>|</span>
+                        <a href="https://codepen.io/roquepulido/pen/xxBoorQ" target="_blank">JS Pen</a>
+                    </li>
+                    <li>
+                        <span>Week 02:</span>
+                        <a href="./week02/bom.html" target="_blank">DOM Manipulation</a>
+                        <span>|</span>
+
+                    </li>
+                    <li>
+                        <span>Week 03:</span>
+
+                        <a href="week03/images/landscape.webp" target="_blank">WebP</a>
+                        <span>|</span>
+                        <a href="week03/lazyload.html" target="_blank">Lazyload</a>
+                        <span>|</span>
+                        <a href="week03/responsive-images.html" target="_blank">Responsive Images</a>
+                        <span>|</span>
+                        <a href="week03/bom.html" target="_blank">Local Storage</a>
+                    </li>
+                    <li>Week 04:<a href="#" target="_blank">|</a></li>
+                    <li>Week 05:<a href="#" target="_blank">|</a></li>
+                    <li>Week 06:<a href="#" target="_blank">|</a></li>
                 </ul>
             </section>
             <section class="card">
@@ -52,23 +83,30 @@
                 </div>
             </section>
         </div>
+        <section class="google-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.66797212494!2d-89.63370922523238!3d20.965844889937532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5673dbc84b4d3d%3A0xe412ed1e7543293f!2sM%C3%A9rida%20Mexico%20Temple!5e0!3m2!1ses-419!2smx!4v1711326783093!5m2!1ses-419!2smx"
+                style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
     </main>
     <footer>
         <div class="row-footer">
-            
+
             <p>&copy;<span id="year"></span></p>
             <p>
                 &#128125; Roque Alberto Pulido &#128126;
             </p>
             <p class="flag"> México
-                <img src="./images/Mexico-Flag-icon.png" alt="mx flag" />
+                <img src="./images/Mexico-Flag-icon.png" alt="mx flag" loading="lazy" />
             </p>
         </div>
         <div class="row-footer">
             <p id="lastModified"></p>
         </div>
     </footer>
-    <script src="scripts/getDates.js"></script>
+
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
