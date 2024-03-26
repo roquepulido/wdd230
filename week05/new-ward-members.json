@@ -1,0 +1,46 @@
+[
+  {
+    "familyName": "Pulido",
+    "dateOfMove": "2023-04-15",
+    "qtyMembers": "6",
+    "wasVisited": false,
+    "individualMemberInfo": [
+      {
+        "firstName": "Roque Alberto",
+        "lastName": "Pulido Morales",
+        "birthDay": "1987-07-21",
+        "gender": "male"
+      },
+      {
+        "firstName": "Jessica",
+        "lastName": "Reyes Serpa",
+        "birthDay": "1986-05-08",
+        "gender": "female"
+      },
+      {
+        "firstName": "Roque Zuriel",
+        "lastName": "Pulido Reyes",
+        "birthDay": "2011-01-08",
+        "gender": "male"
+      },
+      {
+        "firstName": "Jethro Saul",
+        "lastName": "Pulido Reyes",
+        "birthDay": "2012-04-06",
+        "gender": "male"
+      },
+      {
+        "firstName": "Set Benjamin",
+        "lastName": "Pulido Reyes",
+        "birthDay": "2014-02-08",
+        "gender": "male"
+      },
+      {
+        "firstName": "Rebeca Sarahi",
+        "lastName": "Pulido Reyes",
+        "birthDay": "2020-10-09",
+        "gender": "female"
+      }
+    ]
+  }
+]

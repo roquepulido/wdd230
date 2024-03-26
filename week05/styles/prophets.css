@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    color: navy
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+}
+
+section {
+    margin: 0.25rem;
+    padding: 1rem 1rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+}
+section img{
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 8px #444;
+}
