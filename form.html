@@ -17,78 +17,76 @@
 </head>
 
 <body>
+    <header>
+        <img src="images/profile.jpg" alt="Roque Alberto Pulido" width="75" height="100" loading="lazy">
+        <span>Roque A. Pulido</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="./form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <form action="record.html" method="get" class="form-class">
+                <fieldset>
+                    <legend>User Information</legend>
 
-    <body>
-        <header>
-            <img src="images/profile.jpg" alt="Roque Alberto Pulido" width="75" height="100" loading="lazy">
-            <span>Roque A. Pulido</span>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./chamber/index.html">Chamber</a></li>
-                <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="./form.html" class="active">Form</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div class="container">
-                <form action="record.html" method="get" class="form-class">
-                    <fieldset>
-                        <legend>User Information</legend>
+                    <label for="username">Username
+                        <input type="text" name="username" id="username" required onchange="activeButton()">
+                    </label>
 
-                        <label for="username">Username
-                            <input type="text" name="username" id="username" required onchange="activeButton()">
-                        </label>
-
-                        <label for="password">Password
-                            <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,}" required
-                                onchange="activeButton()">
-                        </label>
-                        <span id="passwordMsg" class="red-text"></span>
+                    <label for="password">Password
+                        <input type="password" name="password" id="password" pattern="[A-Za-z0-9]{8,}" required
+                            onchange="activeButton()">
+                    </label>
+                    <span id="passwordMsg" class="red-text"></span>
 
 
-                        <label for="passwordRepeat">Repeat Password
-                            <input type="password" name="passwordRepeat" id="passwordRepeat" pattern="[A-Za-z0-9]{8,}"
-                                required onchange="activeButton()">
-                        </label>
+                    <label for="passwordRepeat">Repeat Password
+                        <input type="password" name="passwordRepeat" id="passwordRepeat" pattern="[A-Za-z0-9]{8,}"
+                            required onchange="activeButton()">
+                    </label>
 
 
-                        <label for="email">Email
-                            <input type="email" name="email" id="email" pattern="[\w.]+@byui\.edu"
-                                placeholder="Please enter a valid email address" required onchange="activeButton()"
-                                title="Please enter a valid email address">
-                        </label>
+                    <label for="email">Email
+                        <input type="email" name="email" id="email" pattern="[\w.]+@byui\.edu"
+                            placeholder="Please enter a valid email address" required onchange="activeButton()"
+                            title="Please enter a valid email address">
+                    </label>
 
 
-                        <label for="rate">Page Rating <span id="rateValue"></span>
-                            <input type="range" name="rate" id="rate" min="1" max="10" step="1">
-                        </label>
+                    <label for="rate">Page Rating <span id="rateValue"></span>
+                        <input type="range" name="rate" id="rate" min="1" max="10" step="1">
+                    </label>
 
 
 
-                        <input type="submit" id="submitButton" disabled value="Send My Information">
-                    </fieldset>
-                </form>
-            </div>
-        </main>
-        <footer>
-            <div class="row-footer">
-                <p>&copy;<span id="year"></span></p>
-                <p>
-                    &#128125; Roque Alberto Pulido &#128126;
-                </p>
-                <p class="flag"> México
-                    <img src="./images/Mexico-Flag-icon.png" alt="mx flag" />
-                </p>
-            </div>
-            <div class="row-footer">
-                <p id="lastModified"></p>
-            </div>
-        </footer>
-        <script src="./scripts/main.js"></script>
-        <script src="./scripts/form.js"></script>
-    </body>
+                    <input type="submit" id="submitButton" disabled value="Send My Information">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="row-footer">
+            <p>&copy;<span id="year"></span></p>
+            <p>
+                &#128125; Roque Alberto Pulido &#128126;
+            </p>
+            <p class="flag"> México
+                <img src="./images/Mexico-Flag-icon.png" alt="mx flag" />
+            </p>
+        </div>
+        <div class="row-footer">
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
+
 
 </html>
