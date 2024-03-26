@@ -73,4 +73,12 @@
         grid-area: 1 / 2 / 2 / 3;
     }
 
+    /*CSS form*/
+    .info-membership{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
 }

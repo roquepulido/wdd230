@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan Merida, Yucatan Chamber of Commerce</title>
-    <meta name="description" content="Chamber of Commerce Merida Yucatan.">
+    <title>Site Plan Merida, Join Yucatan Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce Merida Yucatan. Join form">
     <meta name="author" content="Roque Pulido">
     <meta property="og:title" content="Chamber of Commerce Merida Yucatan">
     <meta property="og:type" content="website">
@@ -39,6 +39,76 @@
     </nav>
 
     <main class="container form">
+        <div class="info-membership">
+            <div class="membership">
+                <img src="./images/form/np-medal.svg" alt="np-medal">
+                <h4>Non-Profit Membership</h4>
+                <ul>
+                    <li>Access to Chamber events and networking opportunities.</li>
+                    <li>Listing in the Chamber's online directory with basic contact information.</li>
+                    <li>Participation in Chamber committees focused on community service and outreach.</li>
+                    <li>Subscription to Chamber newsletters and updates.</li>
+                </ul>
+            </div>
+            <div class="membership">
+                <img src="./images/form/bronze-medal.svg" alt="bronze-medal">
+                <h4>Bronze Membership</h4>
+                <ul>
+                    <li>All benefits of Non-Profit Membership.</li>
+                    <li>Enhanced listing in the Chamber's online directory with a brief description and logo.</li>
+                    <li>Opportunity to host or sponsor Chamber events.</li>
+                    <li>Access to member-exclusive workshops and seminars.</li>
+                    <li>Discounted rates for advertising in Chamber publications.</li>
+                </ul>
+            </div>
+            <div class="membership">
+                <img src="./images/form/silver-medal.svg" alt="silver-medal">
+                <h4>Silver</h4>
+                <ul>
+                    <li>
+                        All benefits of Bronze Membership.
+                    </li>
+                    <li>
+                        Priority placement in the Chamber's online directory with a detailed profile and links to social
+                        media.
+                    </li>
+                    <li>
+                        Recognition as a Silver-level member in Chamber communications and events.
+                    </li>
+                    <li>
+                        Invitations to VIP receptions and special networking events.
+                    </li>
+                    <li>
+                        Access to Chamber resources such as market research reports and business development tools.
+                    </li>
+                </ul>
+            </div>
+            <div class="membership">
+                <img src="./images/form/gold-medal.svg" alt="gold-medal">
+                <h4>Gold Membership</h4>
+                <ul>
+                    <li>
+                        All benefits of Silver Membership.
+                    </li>
+                    <li>
+                        Premier placement in the Chamber's online directory with prominent branding and multimedia
+                        content.
+                    </li>
+                    <li>
+                        Exclusive sponsorship opportunities for flagship Chamber events.
+                    </li>
+                    <li>
+                        Featured spotlights in Chamber newsletters and press releases.
+                    </li>
+                    <li>
+                        Personalized support from Chamber staff for business advocacy and lobbying efforts.
+                    </li>
+                    <li>
+                        Invitation to join the Chamber's advisory board or executive council.
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="form-class">
             <form action="./thankyou.html" method="get">
                 <fieldset>
@@ -50,7 +120,8 @@
                     <label>Email*<input type="email" name="email" id="email" placeholder="email@email.com"
                             required></label>
                     <label>Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
-                    <label>Business/Organization's Name*<input type="tel" name="phone" id="phone" required></label>
+                    <label>Business/Organization's Name*<input type="text" name="organization" id="organization"
+                            required></label>
                     <label>
                         Membership Level
                         <select name="membership" id="membership">
@@ -64,14 +135,12 @@
                     <label>Business/Organization's Description
                         <textarea name="description" id="description" cols="30" rows="5"></textarea>
                     </label>
-                    <input type="hidden" name="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp">
                     <input type="submit" value="Send My Information">
                 </fieldset>
             </form>
         </div>
-        <div class="info-membership">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita ad facilis doloribus, tempore natus temporibus totam rerum aspernatur, assumenda perspiciatis reiciendis atque praesentium nemo, officiis veniam sapiente odio similique.</p>
-        </div>
+
 
     </main>
 
@@ -102,7 +171,7 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script>
-
+        document.getElementById('timestamp').value = Date.now();
     </script>
 </body>
 
