@@ -1,0 +1,93 @@
+{
+  "weeks": [
+    {
+      "week": "Week 01:",
+      "links": [
+        {
+          "title": "Layout",
+          "url": "./week01/holygrail.html"
+        },
+        {
+          "title": "Media Query",
+          "url": "./week01/media-query.html"
+        },
+        {
+          "title": "JS Pen",
+          "url": "https://codepen.io/roquepulido/pen/xxBoorQ"
+        }
+      ]
+    },
+    {
+      "week": "Week 02:",
+      "links": [
+        {
+          "title": "DOM Manipulation",
+          "url": "./week02/bom.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 03:",
+      "links": [
+        {
+          "title": "WebP",
+          "url": "./week03/images/landscape.webp"
+        },
+        {
+          "title": "Lazyload",
+          "url": "./week03/lazyload.html"
+        },
+        {
+          "title": "Responsive Images",
+          "url": "./week03/responsive-images.html"
+        },
+        {
+          "title": "Local Storage",
+          "url": "./week03/bom.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 04:",
+      "links": [
+        {
+          "title": "CSS Pseudo-classes",
+          "url": "https://codepen.io/roquepulido/pen/yLrXaLY"
+        },
+        {
+          "title": "CSS Combinators",
+          "url": "./week04/images/css-combinators.webp"
+        },
+        {
+          "title": "HTML Tables",
+          "url": "./week04/tablebuild.html"
+        },
+        {
+          "title": "HTML Forms",
+          "url": "./week04/form/index.html"
+        }
+      ]
+    },
+    {
+      "week": "Week 05:",
+      "links": [
+        {
+          "title": "CSS Pseudo-elements",
+          "url": "https://codepen.io/roquepulido/pen/ExJvPmW"
+        },
+        {
+          "title": "JSON",
+          "url": "./week05/new-ward-members.json"
+        },
+        {
+          "title": "The Fetch API",
+          "url": "./week05/prophets.html"
+        },
+        {
+          "title": "Consuming a Weather API",
+          "url": "./week05/weather.html"
+        }
+      ]
+    }
+  ]
+}

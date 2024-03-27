@@ -39,66 +39,19 @@
         </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="cards">
-            <section class="card">
+            <section class="card" >
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li>
-                        <span>
-                            Week 01:
-                        </span>
-                        <a href="./week01/holygrail.html" target="_blank">Layout</a>
-                        <span>|</span>
-                        <a href="./week01/media-query.html" target="_blank">Media Query</a>
-                        <span>|</span>
-                        <a href="https://codepen.io/roquepulido/pen/xxBoorQ" target="_blank">JS Pen</a>
-                    </li>
-                    <li>
-                        <span>Week 02:</span>
-                        <a href="./week02/bom.html" target="_blank">DOM Manipulation</a>
-                        <span>|</span>
-
-                    </li>
-                    <li>
-                        <span>Week 03:</span>
-
-                        <a href="week03/images/landscape.webp" target="_blank">WebP</a>
-                        <span>|</span>
-                        <a href="week03/lazyload.html" target="_blank">Lazyload</a>
-                        <span>|</span>
-                        <a href="week03/responsive-images.html" target="_blank">Responsive Images</a>
-                        <span>|</span>
-                        <a href="week03/bom.html" target="_blank">Local Storage</a>
-                    </li>
-                    <li>
-                        <span>Week 04:</span>
-                        <a href="https://codepen.io/roquepulido/pen/yLrXaLY" target="_blank">CSS Pseudo-classes</a>
-                        <span>|</span>
-                        <a href="./week04/images/css-combinators.webp" target="_blank">CSS Combinators</a>
-                        <span>|</span>
-                        <a href="week04/tablebuild.html" target="_blank">HTML Tables</a>
-                        <span>|</span>
-                        <a href="week04/form/index.html" target="_blank">HTML Forms</a>
-                    </li>
-                    <li>
-                        <span>Week 05:</span>
-                        <a href="https://codepen.io/roquepulido/pen/ExJvPmW" target="_blank">CSS Pseudo-elements</a>
-                        <span>|</span>
-                        <a href="./week05/new-ward-members.json" target="_blank">JSON</a>
-                        <span>|</span>
-                        <a href="./week05/prophets.html" target="_blank">The Fetch API</a>
-                        <span>|</span>
-                        <a href="./week05/weather.html" target="_blank">Consuming a Weather API</a>
-                    </li>
-                    <li>Week 06:<a href="#" target="_blank">|</a></li>
-                </ul>
+                <ul id="links">
+                   
             </section>
             <section class="card">
                 <h2>Information</h2>
-                <div>
+                <div class="weather-container">
                     <p id="place"></p>
-                    <p id="temp"></p>
-                    <p>Page Visits: <span id="visits"></span></p>
+                    <span id="temp"></span>
+                    <img id="weather-icon" src="" alt="">
                 </div>
+                <p>Page Visits: <span id="visits"></span></p>
             </section>
         </div>
         <section class="google-maps">
@@ -127,6 +80,7 @@
     <script src="./scripts/main.js"></script>
     <script src="./scripts/visits.js"></script>
     <script src="./scripts/weather.js"></script>
+    <script src="./scripts/links.js"></script>
 </body>
 
 </html>
