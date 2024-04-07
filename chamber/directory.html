@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -47,17 +46,8 @@
             <button id="list"><img src="./images/svg/list_icon.svg" alt="list" width="30"></button>
         </div>
 
-        <article class="grid" x-data="directory">
-            <template x-for="business in elements">
-                <div class="business-container">
-                    <img :src="business.image" :alt="business.name">
-                    <span x-text="business.name" class="name"></span>
-                    <span x-text="business.address" class="address"></span>
-                    <a :href="'tel:' + business.phone" x-text="business.phone" class="phone">tel</a>
-                    <a :href="business.website" x-text="business.website" class="website">website</a>
-
-                </div>
-            </template>
+        <article class="grid" id="directory">
+            
         </article>
     </main>
 
