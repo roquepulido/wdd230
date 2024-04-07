@@ -4,7 +4,7 @@
     --warning: #E3B505;
     --secondary: #4F6D7A;
     --info: #56A3A6;
-    --font-color: azure;
+    --font-color: #f0ffff;
     --font-color-dark: black;
     --base-back-ground: #eee;
 }
@@ -223,7 +223,7 @@ section p {
     width: 100%;
 }
 
-.hero-container button {
+.hero-container a {
 
     position: absolute;
     left: 50%;
@@ -238,9 +238,10 @@ section p {
     cursor: pointer;
     font-size: 2rem;
     transition: background-color .3s ease;
+    text-decoration: none;
 }
 
-.hero-container button:hover {
+.hero-container a:hover {
     background-color: #084C61cb;
 }
 
@@ -395,7 +396,7 @@ section p {
 }
 
 /* forms CSS*/
-.info-membership{
+.info-membership {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -406,12 +407,122 @@ section p {
     padding: 1rem;
     font-size: .8rem;
 }
-.membership img{
+
+.membership img {
     width: 100px;
     height: auto;
     margin: 1rem 0;
 }
-.membership h4{
+
+.membership h4 {
     margin-bottom: 1rem;
     font-size: 1rem;
+}
+
+/*------------------ DIRECTORY CSS -----------------*/
+.container-directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu button {
+        padding: .8rem;
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .5rem;
+        border: 1px solid black;
+        background-color: var(--primary);
+        transition: background-color .3s ease;
+    }
+
+    .menu button:hover {
+        background-color: var(--info);
+        border: 1px solid #a0a0a0;
+    }
+
+    .menu button.active {
+        background-color: var(--secondary);
+        border: 1px solid #a0a0a0;
+    }
+}
+
+.name {
+    font-weight: 500;
+}
+
+.address {
+    font-size: .7rem;
+}
+
+.phone {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: rgb(0, 0, 255, .5);
+}
+
+.grid {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .business-container {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        width: 300px;
+        box-shadow: 1px 1px 4px #999;
+
+        img {
+            width: 70px;
+            height: auto;
+        }
+
+
+    }
+}
+
+.list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .business-container {
+        width: 300px;
+        padding: 0.5rem;
+        background-color: var(--info);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+
+        img {
+            display: none;
+        }
+    }
+
+    .business-container:nth-child(odd) {
+        background-color: white;
+    }
 }

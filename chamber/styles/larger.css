@@ -74,11 +74,46 @@
     }
 
     /*CSS form*/
-    .info-membership{
+    .info-membership {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         gap: 1rem;
+    }
+
+
+
+    /*------------------ DIRECTORY CSS -----------------*/
+
+
+    .grid {
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .business-container {
+            margin: 0 auto;
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    .list {
+
+        .business-container {
+            width: 800px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                display: none;
+            }
+        }
+
+        .business-container:nth-child(odd) {
+            background-color: white;
+        }
     }
 
 }
