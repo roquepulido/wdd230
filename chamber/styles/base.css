@@ -156,7 +156,7 @@ main h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 footer {
@@ -527,4 +527,9 @@ a:hover {
 
 .list .business-container:nth-child(odd) {
     background-color: white;
+}
+
+#forecast-weather .forecast{
+    display: flex;
+    flex-direction: row;
 }
