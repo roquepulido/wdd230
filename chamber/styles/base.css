@@ -489,6 +489,7 @@ a:hover {
         flex-direction: column;
         gap: 0.5rem;
         align-items: center;
+        justify-content: center;
         width: 300px;
         box-shadow: 1px 1px 4px #999;
 
