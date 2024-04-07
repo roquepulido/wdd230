@@ -4,10 +4,9 @@ document.getElementById("place").innerText = "Mérida, México";
 const temp = document.getElementById("temp");
 const weatherIcon = document.getElementById("weather-icon");
 
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?lat=20.97537&lon=-89.61696&units=imperial&appid=2eb95ba3243bdb54c74d4de49fc48841";
+const apiKey = "d36f27cbcf934a43be27d2f7e20e7cf2";
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=49.7557&lon=6.6394&units=imperial&appid=${apiKey}`;
 async function apiFetch(url) {
-  debugger;
   const response = await fetch(url)
     .then((res) => res.json())
     .catch((err) => console.error(err));
