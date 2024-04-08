@@ -2,7 +2,7 @@ const modal = document.getElementById("modal");
 var closeBtn = document.getElementById("close");
 
 window.onload = function () {
-    debugger
+    
   const day = new Date().getDay();
   if (day > 0 && day < 4) {
     modal.style.display = "block";

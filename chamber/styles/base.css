@@ -206,6 +206,8 @@ section p {
 
 .brand-logo {
     width: 100px;
+    height: 100px;
+    margin: auto 0;
 }
 
 .header-brand {
