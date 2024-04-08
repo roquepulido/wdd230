@@ -1,3 +1,5 @@
+import { getDataDirectory } from "./getData.js";
+
 const gridbutton = document.getElementById("grid");
 const listbutton = document.getElementById("list");
 const display = document.querySelector("article");
@@ -19,10 +21,8 @@ function showList() {
   gridbutton.classList.remove("active");
   listbutton.classList.add("active");
 }
-async function getData() {
-  let data = [];
-  const url = "./data/members.json";
-  data = await fetch(url).then((r) => r.json());
+
+function printDirectory(data) {
   data.forEach((business) => {
     directory.innerHTML += `
     <div class="business-container">
@@ -34,4 +34,12 @@ async function getData() {
     </div>`;
   });
 }
-getData();
+
+const showDirectoryElements = async () => {
+  const data = await getDataDirectory();
+  printDirectory(data);
+};
+
+showDirectoryElements();
+
+

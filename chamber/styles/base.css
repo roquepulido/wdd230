@@ -279,7 +279,30 @@ section p {
 .container-spot {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
+
+/* ------------- CSS spotlight --------------- */
+.spotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: .5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+.spotlight img {
+    width: 60px;
+    height: auto;
+}
+
+/* END */
 
 .calendar-container {
     width: 100%;
@@ -529,7 +552,7 @@ a:hover {
     background-color: white;
 }
 
-#forecast-weather .forecast{
+#forecast-weather .forecast {
     display: flex;
     flex-direction: row;
 }
