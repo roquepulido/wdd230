@@ -1,15 +1,6 @@
 const apiKey = "d36f27cbcf934a43be27d2f7e20e7cf2";
-//const url = `https://api.openweathermap.org/data/2.5/forecast?lat=20.97&lon=-89.62&units=imperial&appid=${apiKey}`;
-const url = "./data/test.json";
-// TODO cambir archivo test a API
-// async function apiFetch(url) {
-//   const response = await fetch(url)
-//     .then((res) => res.json())
-//     .catch((err) => console.error(err));
-
-//   console.log("Weather Data API:", response);
-//   displayResults(response);
-// }
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=20.97&lon=-89.62&units=imperial&appid=${apiKey}`;
+// const url = "./data/test.json";
 async function apiFetch(url) {
   const response = await fetch(url)
     .then((res) => res.json())
